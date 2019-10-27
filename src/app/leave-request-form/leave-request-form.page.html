@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Leave Request Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <form [formGroup]="leaveRequestForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label>Leave type:</ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <app-select-list [options]="typeOptions" [selectedValue]="leaveRequestForm.value.type"
+            (selectOption)="onSelectType($event)"></app-select-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+        </ion-col>
+        <!-- <ion-col size="8">
+          <ion-textarea formControlName="remarks"></ion-textarea>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="end" >
+      <ion-button  (click)="onClickNext()">Next</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- *ngIf="isValid()" -->
+<!-- [disabled]="!isValid()" -->

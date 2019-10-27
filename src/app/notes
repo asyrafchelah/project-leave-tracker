@@ -1,0 +1,35 @@
+Function
+1. Request for leave
+2. Display Leave Detail
+3. Display Calendar
+4. Display Leave total
+5. enquiry for previous leave
+
+
+leave type
+- Annual/Emergency leave
+- Medical leave
+- Hospitalisation leave
+- No Pay leave leave
+- Patenity leave
+- Maternity leave
+- Training leave
+
+if select Annual leave. no photo needed
+if sumbit mc leave. need photo. connect to camera native
+
+Leave request/ Display leave
+- LeaveID
+- Leave type
+- Leave Date
+- Total leave
+- Leave Detail
+
+Status Leave
+- Request 
+--Notification Reminder to send email request
+--Stop Notification if email has been send
+--Open native application to send email request to CJ_Leave 
+--Auto type " I am requesting for leave from ..... to ..... for <remarks>
+--After request. Leave will be deducted
+- Approved
